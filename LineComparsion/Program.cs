@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 
 namespace LineComparsion
 {
@@ -33,8 +34,10 @@ namespace LineComparsion
 
             if (lengthOfLine1 == lengthOfLine2)
                 Console.WriteLine("Both Lines are Equal Length");
+            else if (lengthOfLine1 > lengthOfLine2)
+                Console.WriteLine("First line is greater than Second line");
             else
-                Console.WriteLine("Lines are not Equal");
+                Console.WriteLine("Second line is greater than First line");
 
             Console.ReadLine();
 
